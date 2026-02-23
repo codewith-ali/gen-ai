@@ -1,0 +1,26 @@
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 2rem;
+  max-width: 720px;
+  width: 100%;
+}
+
+.title {
+  margin: 0 0 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.loading {
+  margin: 0.75rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.error {
+  margin: 0.75rem 0;
+  color: #c00;
+  font-size: 0.9rem;
+}
