@@ -86,6 +86,21 @@ npm test
 
 Runs backend Jest tests (bond math and controller).
 
+## Deployment (live link)
+
+The app is deployment-ready: backend uses `process.env.PORT`, frontend uses `VITE_API_BASE` for the API URL.
+
+**Backend (e.g. Render)**  
+- Root: `backend`  
+- Build: `npm install && npm run build`  
+- Start: `npm run start:prod`  
+
+**Frontend (e.g. Vercel)**  
+- Root: `frontend`  
+- Set env: `VITE_API_BASE = https://your-backend-url.onrender.com/bond` (your actual backend base URL including `/bond`)  
+
+Local dev unchanged: without `VITE_API_BASE`, the frontend uses `/bond` and the Vite proxy.
+
 ## Assumptions
 
 - First coupon payment date: today + (12/freq) months (12 for annual, 6 for semi-annual).

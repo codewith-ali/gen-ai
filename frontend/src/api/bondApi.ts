@@ -1,6 +1,6 @@
 import type { CalculateBondRequest, BondCalculateResult } from '../types/bond';
 
-const API_BASE = '/bond';
+const API_BASE = import.meta.env.VITE_API_BASE ?? '/bond';
 
 export async function calculateBond(
   body: CalculateBondRequest,
